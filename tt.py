@@ -7,7 +7,7 @@ from reportlab.pdfgen import canvas
 import io
 
 
-genai.configure(api_key="AIzaSyAruQMUEX0SWQJtsMZtAJbw-aRLURyUDw8")
+genai.configure(api_key="")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 app = Flask(__name__)
@@ -77,3 +77,4 @@ def admin_page():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
